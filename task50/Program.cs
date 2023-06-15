@@ -58,7 +58,7 @@ void FindNumber(int[,] inArray)
         {
             if (a==i && b==j)
             {
-                Console.WriteLine("Это позиция элемента: сторока [i], столбец [j]");
+                Console.WriteLine($"Это позиция элемента: сторока {i}, столбец {j}");
             }
             else
             {
