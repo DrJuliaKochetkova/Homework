@@ -12,8 +12,8 @@ int columns = Prompt("Введите количество столбцов ма�
 int[,] array = GetArray(rows, columns, 0, 10);
 PrintArray(array);
 
-int a = Prompt("Введите параметр символа: ");
-int b = Prompt("Введите параметр символа: ");
+int a = Prompt("Введите параметр строки символа: ");
+int b = Prompt("Введите параметр столбца символа: ");
 
 FindNumber(array);
 
@@ -49,14 +49,13 @@ void PrintArray(int[,] inArray)
     }
 }
 
-
 void FindNumber(int[,] inArray)
 {
     for (int i = 0; i < inArray.GetLength(0); i++) // GetLength(0) отвечает за строки
     {
         for (int j = 0; j < inArray.GetLength(1); j++)
         {
-            if (a==i && b==j)
+            if (a == i && b == j)
             {
                 Console.WriteLine($"Это позиция элемента: сторока {i}, столбец {j}");
             }
@@ -65,9 +64,10 @@ void FindNumber(int[,] inArray)
                 Console.WriteLine("Такого элемента не существует");
                 break;
             }
-            
+
         }
         Console.WriteLine();
     }
 }
+
 
